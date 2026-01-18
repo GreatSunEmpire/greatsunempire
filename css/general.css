@@ -1,0 +1,9 @@
+body {
+    font-family: 'Iansui';
+    font-size: medium;
+}
+
+.flex_container {
+    display: flex;
+    gap: 20px;
+}
