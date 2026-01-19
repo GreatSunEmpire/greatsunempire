@@ -32,7 +32,7 @@ body {
 }
 
 .title {
-    flex:3;
+    flex:1;
     align-items: center;
     width:35%;
     font-size: xx-large;
@@ -53,4 +53,8 @@ body {
 #home_logo {
     text-decoration: none;
     color: black;
+}
+
+#link0001 {
+    flex:4;
 }
