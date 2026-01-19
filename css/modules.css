@@ -9,6 +9,7 @@ table {
 td,th,tr {
     text-align: center;
     padding:5px;
+    font-size: x-large;
 
     border: 1px black solid;
     border-top: none;
@@ -23,11 +24,14 @@ td,th,tr {
 
 .dropbtn {
     cursor:pointer;
+    border:none;
+    font-family: 'Iansui';
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  font-size: medium;
   background-color: #f9f9f9;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -49,5 +53,5 @@ td,th,tr {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  font-weight: bolder;
 }
