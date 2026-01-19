@@ -1,39 +1,72 @@
 <html lang="zh-TW">
     <head>
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iansui">
+
         <!-- CSS Stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Iansui" rel="stylesheet">
         <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/modules.css">
         <!-- Info -->
         <title>大陽帝國</title>
         <link rel="icon" type="image/png" href="images/national_emblem.png">
     </head>
     <body>
         <div class="header">
-            <div class="flex_container">
-                <div class="title"> <!--Left-->
-                    <p class="right" style="margin:64px 0;">
-                        大陽聯合帝國<br>
-                        Great Sun Empire
-                    </p>
+            <a href="https://greatsunempire.github.io/greatsunempire/" id="home_logo" style="font-family: 'Iansui';">
+                <div class="flex_container">
+                    <div class="title"> <!--Left-->
+                        <p class="right" style="margin:64px 0;">
+                            大陽聯合帝國<br>
+                            Great Sun Empire
+                        </p>
+                    </div>
+                    <div class="title"> <!--Right-->
+                        <img src="images/national_emblem.png" height='200px' width="200px">
+                    </div>
                 </div>
-                <div class="title"> <!--Right-->
-                    <img src="images/national_emblem.png" height='200px' width="200px">
-                </div>
-            </div>
+            </a>
             <div class="menu">
                 <table>
-                    <th id="menu-table">
-                        <td>國家資訊</td>
-                        <td>首相府</td>
-                        <td>帝國國會</td>
-                        <td>官方訊息</td>
-                        <td>政黨</td>
-                        <td>法律</td>
-                        <td>???</td>
-                    </th>
+                    <tr id="menu-table">
+                        <td class="dropdown">
+                            <button class="dropbtn">國家資訊</button>
+                            <div class="dropdown-content">
+                                <a href="#">國家歷史</a>
+                                <a href="#">疆域</a>
+                            </div>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">帝國民主政府</button>
+                            <div class="dropdown-content">
+                                <a href="#">首相府</a>
+                                <a href="#">國民服務中心</a>
+                                <a href="#">招才中心</a>
+                            </div>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">帝國國會</button>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">官方訊息</button>
+                            <div class="dropdown-content">
+                                <a href="#">首相府</a>
+                                <a href="#">外交部</a>
+                                <a href="#">皇家命令</a>
+                            </div>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">皇室</button>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">政黨</button>
+                        </td>
+                        <td class="dropdown">
+                            <button class="dropbtn">法律</button>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>
+        
     </body>
 </html>
