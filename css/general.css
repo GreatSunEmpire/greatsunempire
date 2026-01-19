@@ -38,14 +38,25 @@ body {
 
 .title {
     flex:1;
+    display: flex;
     align-items: center;
     width:35%;
     font-size: xx-large;
     font-weight: bold;
 }
 
+#left.title {
+    justify-content: flex-end;
+}
+
+#right.title {
+    justify-content: flex-start;
+}
+
 .right {
     text-align: right;
+    max-width: 280px;
+    margin-left: auto;
 }
 
 .menu {
