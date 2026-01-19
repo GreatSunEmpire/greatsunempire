@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com')
+@import url('https://fonts.googleapis.com/css?family=Iansui');
 
 body {
-    background-color: #FFF8E7;
+    background-color:#FFF8E7;
 
-    font-family: 'Iansui';
+    font-family: 'Iansui',Times;
     font-size: medium;
 
+    margin:0;
 }
 
 .flex_container {
@@ -17,11 +18,16 @@ body {
 .header {
     position: sticky;
     top: 0;
+    margin:0;
     padding: 10px;
     background-image:linear-gradient(to bottom,white, #FFF8E7);
     color: #0d1b2a;
     height: 250px;
     font-family: 'Iansui';
+}
+
+#header {
+    background-image:linear-gradient(to bottom,white, #FFF8E7);
 }
 
 .flagsticker {
