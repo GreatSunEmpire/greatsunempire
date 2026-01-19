@@ -26,6 +26,7 @@ td,th,tr {
     cursor:pointer;
     border:none;
     font-family: 'Iansui';
+    background-color: rgba(0,0,0,0);
 }
 
 .dropdown-content {
