@@ -1,6 +1,6 @@
 連結：https://greatsunempire.github.io/greatsunempire/
 
-**0.1試運 18 Jan**
+**0.1 試運 18 Jan**
 
  - 發佈成功
 
@@ -27,3 +27,11 @@
  - 增加logo 隱藏超連結, 可導回至主頁
 
  - 為目錄選項加入dropdown功能
+
+**0.3.1 修正 19 Jan**
+
+ - 在header兩側增加旗幟圖案
+
+ - 為header增加漸變色色調
+
+ - 暫時移除logo 隱藏超連結, 研究中
