@@ -34,7 +34,7 @@ td,th,tr {
   position: absolute;
   font-size: medium;
   background-color: #f9f9f9;
-  min-width: 130px;
+  min-width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 

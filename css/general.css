@@ -58,6 +58,15 @@ hr {
     font-weight: bold;
 }
 
+
+.rounded-container {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(255, 248, 231, 0.6);
+}
+
+
 #left.title {
     justify-content: flex-end;
 }
@@ -68,7 +77,7 @@ hr {
 
 .right {
     text-align: right;
-    max-width: 280px;
+    width: 90%;
 }
 
 .menu {
@@ -91,11 +100,32 @@ hr {
 }
 
 #discord_link {
+    margin:10px;
     padding: 20px;
     border-radius: 10px;
+    justify-content: center;
 
-    text-align: left;
+    text-align: center;
     background-color: #242429;
+    color: white;
+}
+
+#join_button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    width:100%;
+
+    text-align: center;
+    background-color: #008545;
+    color: white;
+
+    cursor: pointer;
+}
+
+#join_button:hover {
+    background-color: #006634;
 }
 
 /* link0001 */
@@ -106,10 +136,10 @@ hr {
     font-family: 'Iansui';
 }
 
-.link0001:link,
-.link0001:visited,
-.link0001:hover,
-.link0001:active {
+.link0001 a:link,
+.link0001 a:visited,
+.link0001 a:hover,
+.link0001 a:active {
     text-decoration: none;
     color: black;
     font-family: 'Iansui';

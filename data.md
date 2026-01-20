@@ -5,3 +5,5 @@
 `link0001` = 首頁redirect
 
 background-color = `#FFF8E7`
+
+永久性連結：[text](https://discord.gg/CTRNwn4aWF)
