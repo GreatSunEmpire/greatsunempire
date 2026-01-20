@@ -30,7 +30,6 @@ hr {
 
 /* header */
 .header {
-    position: sticky;
     top: 0;
     margin:0;
     padding: 10px;
@@ -79,11 +78,9 @@ hr {
 
 .londonbg {
     background-image: url('../images/londonv2.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: top;
     background-repeat: no-repeat;
-    min-height: 400px;
-    width: 100%;
 }
 
 /* IDs */
@@ -91,6 +88,14 @@ hr {
 #home_logo {
     text-decoration: none;
     color: black;
+}
+
+#discord_link {
+    padding: 20px;
+    border-radius: 10px;
+
+    text-align: left;
+    background-color: #242429;
 }
 
 /* link0001 */
