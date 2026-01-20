@@ -9,9 +9,23 @@ body {
     margin:0;
 }
 
+hr {
+    color:black;
+}
+
+/*Flexbox Container */
+
 .flex_container {
     display: flex;
     gap: 20px;
+}
+
+.flex_column1 {
+    flex:1
+}
+
+.flex_column2 {
+    flex:2
 }
 
 /* header */
@@ -20,9 +34,12 @@ body {
     top: 0;
     margin:0;
     padding: 10px;
+    padding-bottom: 0px;
+    height: auto;
+    z-index: 9999;
+
     background-image:linear-gradient(to bottom,white, #FFF8E7);
     color: #0d1b2a;
-    height: 250px;
     font-family: 'Iansui';
 }
 
@@ -31,17 +48,14 @@ body {
 }
 
 .flagsticker {
-    flex:1;
     width:15%;
     text-align: center;
 }
 
 .title {
-    flex:1;
-    display: flex;
     align-items: center;
     width:35%;
-    font-size: xx-large;
+    font-size: large;
     font-weight: bold;
 }
 
@@ -63,6 +77,15 @@ body {
     margin:auto;
 }
 
+.londonbg {
+    background-image: url('../images/londonv2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
+}
+
 /* IDs */
 
 #home_logo {
@@ -72,8 +95,6 @@ body {
 
 /* link0001 */
 .link0001 {
-    flex:4;
-    display: flex;
     gap: 20px;
     text-decoration: none;
     color: black;

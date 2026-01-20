@@ -3,3 +3,5 @@
 `menu_dropdown` = 目錄dropdown
 
 `link0001` = 首頁redirect
+
+background-color = `#FFF8E7`
