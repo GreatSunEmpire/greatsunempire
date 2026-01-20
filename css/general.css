@@ -56,7 +56,6 @@ body {
 .right {
     text-align: right;
     max-width: 280px;
-    margin-left: auto;
 }
 
 .menu {
@@ -71,6 +70,21 @@ body {
     color: black;
 }
 
-#link0001 {
+/* link0001 */
+.link0001 {
     flex:4;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Iansui';
+}
+
+.link0001:link,
+.link0001:visited,
+.link0001:hover,
+.link0001:active {
+    text-decoration: none;
+    color: black;
+    font-family: 'Iansui';
 }

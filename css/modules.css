@@ -47,6 +47,7 @@ td,th,tr {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+  text-decoration: underline;
 }
 
 .dropdown:hover .dropdown-content {
@@ -54,5 +55,5 @@ td,th,tr {
 }
 
 .dropdown:hover .dropbtn {
-  font-weight: bolder;
+  text-decoration: underline;
 }
