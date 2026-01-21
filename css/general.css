@@ -64,6 +64,7 @@ hr {
     border-radius: 15px;
     padding: 10px;
     background-color: rgba(255, 248, 231, 0.6);
+    margin: 10px;
 }
 
 
@@ -100,9 +101,7 @@ hr {
 }
 
 #discord_link {
-    margin:10px;
     padding: 20px;
-    border-radius: 10px;
     justify-content: center;
 
     text-align: center;
