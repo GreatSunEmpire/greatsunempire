@@ -1,3 +1,5 @@
+# 大陽聯合帝國官網 Log
+
 連結：https://greatsunempire.github.io/greatsunempire/
 
 **0.1 試運 18 Jan**

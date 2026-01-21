@@ -1,0 +1,14 @@
+[
+    {
+        "id":"1",
+        "title":"首相公告",
+        "title_eng":"Prime Minister's Announcement",
+        "author":"檸檬鴨",
+        "author_eng":"Lemon Q.",
+        "author_img":"",
+        "context":"Hello World",
+        "context_eng":"Hello World",
+        "attachment":"",
+        "time":"2024-06-01 12:00:00"
+    }
+]

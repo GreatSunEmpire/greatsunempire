@@ -1,4 +1,4 @@
-<html lang="zh-TW">
+<html>
     <head>
         <!-- Setup -->
         <meta charset="UTF-8">
@@ -13,7 +13,6 @@
 
         <!-- Javascript -->
         <script src="javascript/hyperlink.js" defer></script>
-
         <!-- Info -->
         <title>大陽帝國</title>
         <link rel="icon" type="image/png" href="images/national_emblem.png">
@@ -66,9 +65,9 @@
                             <td class="dropdown">
                                 <button class="dropbtn">官方訊息</button>
                                 <div class="dropdown-content">
-                                    <a href="forum.html?category=PMOfficeA">首相府</a>
-                                    <a href="forum.html?category=ForeignMinistryA">外交部</a>
-                                    <a href="forum.html?category=RoyalDecrees">皇家命令</a>
+                                    <a href="#">首相府</a>
+                                    <a href="#">外交部</a>
+                                    <a href="#">皇家命令</a>
                                 </div>
                             </td>
                             <td class="dropdown">
@@ -80,8 +79,8 @@
                             <td class="dropdown">
                                 <button class="dropbtn">法律</button>
                                 <div class="dropdown-content">
-                                    <a href="forum.html?category=Const-Laws">憲政</a>
-                                    <a href="forum.html?category=Current-Laws">現行法令</a>
+                                    <a href="#">憲政</a>
+                                    <a href="#">現行法令</a>
                                     <a href="#"></a>
                                 </div>
                             </td>
@@ -92,33 +91,9 @@
             </div>
             
         </section>
-        <section class="londonbg" style="height: 1000px; margin-top: 20px;">
-            <div class="flex_container">
-                <div class="flex_column1">
-                    <!-- Sidebar here -->
-                     <div class="rounded-container" id="discord_link">
-                        <div class="flex_container">
-                            <img src="images/flag.png" class="flex_column1" style="width: 15%; height:auto;">
-                            <div class="flex_column2 flex_container">
-                                <p class="flex_column2" style="margin:auto; font-size: 18px;">
-                                    大陽帝國官方Discord
-                                </p>
-                                <img src="images/discord-icon.svg" class="flex_column1" style="width: 5%; height:auto; margin: auto;">
-                            </div>
-                        </div>
-                        <a href="https://discord.gg/CTRNwn4aWF">
-                            <button id="join_button">加入伺服器</button>
-                        </a>
-                     </div>
-                    
-                </div>
-                <div class="flex_column2 rounded-container">
-                    <h1>
-                        本網站最熱門
-                    </h1>
-                    
-            </div>
-            
-        </section>
+        <div id="posts">Loading...</div>
+
+        <!-- JSScript-->
+        <script src="javascript/forum.js"></script>
     </body>
 </html>
