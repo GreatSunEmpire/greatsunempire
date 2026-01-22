@@ -13,6 +13,18 @@ hr {
     color:black;
 }
 
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.centered #post-context {
+  width: 100%;
+  max-width: 800px;
+}
+
 /*Flexbox Container */
 
 .flex_container {
@@ -48,6 +60,9 @@ hr {
 
 .flagsticker {
     width:15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -92,6 +107,13 @@ hr {
     background-position: top;
     background-repeat: no-repeat;
 }
+.mapbg {
+    background: white;
+    background-image: url('../images/worldmap.jpg');
+    background-size: auto 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
 
 /* IDs */
 
@@ -127,6 +149,13 @@ hr {
     background-color: #006634;
 }
 
+#category-name {
+    font-size: xxx-large;
+    color: #1d70b8;
+    margin: 0;
+    padding: 0;
+}
+
 /* link0001 */
 .link0001 {
     gap: 20px;
@@ -142,4 +171,26 @@ hr {
     text-decoration: none;
     color: black;
     font-family: 'Iansui';
+}
+
+/* Buttons */
+
+#button0001 {
+    cursor:pointer;
+    border:none;
+    border-radius: 15px;
+    background-color: #1d70b8;
+    width: 70%;
+    height:40%;
+    color:white;
+    font-family: 'Iansui';
+    padding:20px;
+}
+
+/* For mobiles */
+
+@media (max-width: 1020px) {
+  .displayN {
+    display: none;
+  }
 }

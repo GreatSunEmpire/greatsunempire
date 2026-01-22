@@ -1,5 +1,5 @@
 <html>
-        <head>
+    <head>
         <!-- Setup -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +8,36 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iansui">
 
         <!-- CSS Stylesheets -->
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/modules.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/modules.css">
 
         <!-- Javascript -->
-        <script src="javascript/hyperlink.js" defer></script>
-        <script src="javascript/post.js" defer></script>
+        <script src="../javascript/hyperlink.js" defer></script>
 
         <!-- Info -->
         <title>大陽帝國</title>
-        <link rel="icon" type="image/png" href="images/national_emblem.png">
+        <link rel="icon" type="image/png" href="../images/national_emblem.png">
     </head>
     <body>
         <section id="header" style="background-color: #FFF8E7;">
             <div class="header">
                     <div class="flex_container">
                         <div class="flagsticker flex_column1">
-                            <img src="images/flag.png" class="displayN" style="width: 20%; height: auto;">
+                            <img src="../images/flag.png" class="displayN" style="width: 20%; height: auto;">
                         </div>
                         <div class="flex_container">
                                 <div class="title flex_container flex_column1" id="left"> <!--Left-->
-                                    <a href="index.html" class="right link0001" style="margin:20% 0;">
+                                    <a href="../index.html" class="right link0001" style="margin:20% 0;">
                                         大陽聯合帝國<br>
                                         Great Sun Empire
                                     </a>
                                 </div>
                                 <div class="title flex_container flex_column1" id="right"> <!--Right-->
-                                    <a href="index.html" class="link0001"><img src="images/national_emblem.png" height='140px' width="140px"></a>
+                                    <a href="../index.html" class="link0001"><img src="../images/national_emblem.png" height='140px' width="140px"></a>
                                 </div>
                         </div>
                         <div class="flagsticker flex_column1">
-                            <img src="images/flag.png" class="displayN" style="width: 20%; height: auto;">
+                            <img src="../images/flag.png" class="displayN" style="width: 20%; height: auto;">
                         </div>
                     </div>
                 <div class="menu">
@@ -48,7 +47,7 @@
                                 <button class="dropbtn">國家資訊</button>
                                 <div class="dropdown-content">
                                     <a href="#">國家歷史</a>
-                                    <a href="subpages/territory.html">疆域</a>
+                                    <a href="../subpages/territory.html">疆域</a>
                                     <a href="#">外交</a>
                                 </div>
                             </td>
@@ -67,9 +66,9 @@
                             <td class="dropdown">
                                 <button class="dropbtn">官方訊息</button>
                                 <div class="dropdown-content">
-                                    <a href="forum.html?category=PMOfficeA">首相府</a>
-                                    <a href="forum.html?category=ForeignMinistryA">外交部</a>
-                                    <a href="forum.html?category=RoyalDecrees">皇家命令</a>
+                                    <a href="../forum.html?category=PMOfficeA">首相府</a>
+                                    <a href="../forum.html?category=ForeignMinistryA">外交部</a>
+                                    <a href="../forum.html?category=RoyalDecrees">皇家命令</a>
                                 </div>
                             </td>
                             <td class="dropdown">
@@ -81,8 +80,8 @@
                             <td class="dropdown">
                                 <button class="dropbtn">法律</button>
                                 <div class="dropdown-content">
-                                    <a href="forum.html?category=Const-Laws">憲政</a>
-                                    <a href="forum.html?category=Current-Laws">現行法令</a>
+                                    <a href="../forum.html?category=Const-Laws">憲政</a>
+                                    <a href="../forum.html?category=Current-Laws">現行法令</a>
                                     <a href="#"></a>
                                 </div>
                             </td>
@@ -94,41 +93,26 @@
             
         </section>
         <section>
-            <div class="flex_container" style="margin-top: 20px;">
-                <div class="flex_column1 rounded-container" style="margin-right: 0px;">
-                    <h1 id="category-name"></h1></a>
-                    <br>
-                    <hr>
-
-                    發帖人 / Publisher：
-                    <div class="centered"><img id="post-author-img" style="width:50%; height:auto; border-radius: 50%; margin-top:10px;"></div>
-                    
-                    <span class="centered" id="post-author" style="font-size: 1.7em;"></span>
-                    <hr>
-                    <div class="centered"><button onclick="history.back()" id="button0001">返回母分支 / Back</button></div>
+            <div class="flex_container mapbg" style="height: 300px; align-items: center; justify-content: center;">
+                <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px #000000;">疆域 - Territory</h1>
+            </div>
+            <div class="flex_container">
+                <div class="flex_column2 rounded-container">
+                    <h1 class="centered">本帝國疆域概況</h1>
+                    <p>
+                        N/A
+                    </p>
                 </div>
-                <div class="flex_column2 rounded-container" id="post-content">
-                    <h2 id="post-title"></h2>
-                    Published at <span id="post-time"></span> 公佈
+                <div class="flex_column1 rounded-container centered">
+                    <h1>本帝國本土疆域</h1>
+                    <img src="../images/territory.png" style="width: 100%;
+    height: auto; cursor:pointer;" onclick="window.open('../images/territory.png', '_blank');">
                     <hr>
-                    <p id="post-context"></p>
-                    <hr>
-                    <div class="flex_container">
-                        <div class="flex_column2">
-                            <span id="post-attachment-label">附件:</span>
-                            <br>
-                            <iframe id="post-attachment" style="width:100%; height:400px; border:none; margin-top: 10px;"></iframe>
-                        </div>
-                        <div class="flex_column1 centered"> <!-- 印章 -->
-                            印章<br><br>
-                            <img id="post-seal" style="width:70%; height:auto;">
-                            <hr>
-                            <span id="post-seal-name"></span>
-                        </div>
-                    </div>
+                    <h1>本帝國海外疆域</h1>
+                    <img src="../images/overseas.png" style="width: 100%;
+    height: auto; cursor:pointer;" onclick="window.open('../images/overseas.png', '_blank');">
                 </div>
             </div>
         </section>
-
     </body>
 </html>

@@ -99,11 +99,3 @@ td,th,tr {
     font-size: 1.2em;
     color: #222;
 }
-
-/* For mobiles */
-
-@media (max-width: 767px) {
-  .displayN {
-    display: none;
-  }
-}

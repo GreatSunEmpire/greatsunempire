@@ -116,6 +116,21 @@
 
 **0.8 更新 22 Jan**
 
- - 改善`forum.html`,得較好styling
+ - 改善`forum.html`,得完善styling
 
  - post 容器可以引導至`post.html`,附上category和id來得到準確地址
+
+ - 製作基本Database
+
+ - 增加常瀏覽界面,可輕易修改
+
+**0.9 更新 22 Jan**
+
+ - 對`post.html`的內容顯示完善
+
+ - 調Decor
+
+ - 修理`forum.js`和`post.js`兩項Javascript的錯誤和風險
+
+ - 加上疆域頁面和數項圖片
+

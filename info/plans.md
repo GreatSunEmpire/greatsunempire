@@ -13,3 +13,15 @@ json檔分以下元素：
  - 內文 Context,
 
  - 附上圖片或檔案 Additional Files (研究中)
+
+-------------------------------------------
+
+if statement
+
+ - if elattachment -> image
+
+then show image and provide click-open new tab
+
+ - if elattachment -> pdf or non-image
+
+ download or newtab preview

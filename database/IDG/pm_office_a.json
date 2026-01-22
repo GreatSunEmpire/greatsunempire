@@ -3,9 +3,11 @@
         "id":"0",
         "title":"開發者試行 Developer Trial",
         "author":"檸檬鴨 Lemon Q.",
-        "author_img":"",
-        "context":"Hello World",
-        "attachment":"",
+        "author_img":"../database/avatars/lemonq.jpg",
+        "context":"Hello World \n This is a developer trial post. The First World War was ignited from the assassination of the Archduke Franz Ferdinand of Austria, starting the invasion of the Balkans by the Austro-Hungarian Empire, followed by the participation of the Allies (Germany) and the Ententes, including Britain, France, Russia, etc. Numerous countries",
+        "attachment":"../database/attachments/pdf-sample_0.pdf",
+        "seal":"../images/official_seal.png",
+        "seal_name":"大陽聯合帝國\nThe Great Sun Empire",
         "time":"2026-01-22 15:41:02"
     }
 ]

@@ -37,7 +37,7 @@ async function loadAllPosts(jsonFile) {
         if (!res.ok) throw new Error(`Loading Error: ${res.statusText}`);
         totalPosts = await res.json();
 
-        document.getElementById('forum-title').textContent = categoryToName[getUrlParam('category')] || categoryToName['default'];
+        document.getElementById('forum-title').textContent = categoryToName[category] || categoryToName['default'];
         document.getElementById('total').textContent = totalPosts.length;
 
         totalPages = Math.ceil(totalPosts.length / postsPerPage);
@@ -145,10 +145,10 @@ function renderPagination() {
 
 // 初始化
 (function init() {
-    // 獲取category參數
-    const category = getUrlParam('category') || 'default';
+    // 獲取category參數並存入全局變量（避免遮蔽）
+    category = getUrlParam('category') || 'default';
     // 映射到json文件
     const targetJsonFile = categoryToJsonMap[category] || categoryToJsonMap['default'];
-    //加載數據
+    // 加載數據
     loadAllPosts(targetJsonFile);
 })();

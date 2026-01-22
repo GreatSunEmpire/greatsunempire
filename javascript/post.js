@@ -45,15 +45,36 @@ async function extractPostData() {
         const postAuthorImg = post.author_img;
         const postContext = post.context;
         const postAttachment = post.attachment;
+        const seal = post.seal;
+        const sealName = post.seal_name;
         const postTime = post.time;
 
-        document.getElementById('category-name').textContent = categoryToName[category] || categoryToName['default'];
-        document.getElementById('post-title').textContent = postTitle;
-        document.getElementById('post-author').textContent = postAuthor;
-        document.getElementById('post-author-img').src = postAuthorImg;
-        document.getElementById('post-context').textContent = postContext;
-        document.getElementById('post-attachment').src = postAttachment;
-        document.getElementById('post-time').textContent = postTime;
+        const elCategory = document.getElementById('category-name');
+        if (elCategory) elCategory.textContent = categoryToName[category] || categoryToName['default'];
+
+        const elTitle = document.getElementById('post-title');
+        if (elTitle) elTitle.textContent = postTitle;
+
+        const elAuthor = document.getElementById('post-author');
+        if (elAuthor) elAuthor.textContent = postAuthor;
+
+        const elAuthorImg = document.getElementById('post-author-img');
+        if (elAuthorImg && postAuthorImg) elAuthorImg.src = postAuthorImg;
+
+        const elContext = document.getElementById('post-context');
+        if (elContext) elContext.textContent = postContext;
+
+        const elAttachment = document.getElementById('post-attachment');
+        if (elAttachment && postAttachment) elAttachment.src = postAttachment;
+
+        const elSeal = document.getElementById('post-seal');
+        if (elSeal && seal) elSeal.src = seal;
+
+        const elSealName = document.getElementById('post-seal-name');
+        if (elSealName && sealName) elSealName.textContent = sealName;
+
+        const elTime = document.getElementById('post-time');
+        if (elTime) elTime.textContent = postTime;
     } catch (err) {
         // Handle error as needed
         return null;
@@ -61,3 +82,4 @@ async function extractPostData() {
 }
 
 extractPostData();
+
