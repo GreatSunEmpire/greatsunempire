@@ -107,3 +107,15 @@
  - 加上沒用的東西
 
  - 此修正是給轉去台式電腦用的www
+
+**0.7 更新 21 Jan**
+
+ - 製作`forum.html`初始版本，可加載帖文list
+
+ - 加上分頁功能,每6個帖文隔一頁
+
+**0.8 更新 22 Jan**
+
+ - 改善`forum.html`,得較好styling
+
+ - post 容器可以引導至`post.html`,附上category和id來得到準確地址

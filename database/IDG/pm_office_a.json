@@ -1,14 +1,11 @@
 [
     {
-        "id":"1",
-        "title":"首相公告",
-        "title_eng":"Prime Minister's Announcement",
-        "author":"檸檬鴨",
-        "author_eng":"Lemon Q.",
+        "id":"0",
+        "title":"開發者試行 Developer Trial",
+        "author":"檸檬鴨 Lemon Q.",
         "author_img":"",
         "context":"Hello World",
-        "context_eng":"Hello World",
         "attachment":"",
-        "time":"2024-06-01 12:00:00"
+        "time":"2026-01-22 15:41:02"
     }
 ]

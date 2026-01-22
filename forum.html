@@ -1,4 +1,4 @@
-<html>
+<html lang="zh-TW">
     <head>
         <!-- Setup -->
         <meta charset="UTF-8">
@@ -10,11 +10,12 @@
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/modules.css">
+        <link rel="stylesheet" href="css/forum.css">
 
         <!-- Javascript -->
         <script src="javascript/hyperlink.js" defer></script>
         <!-- Info -->
-        <title>大陽帝國</title>
+        <title>大陽聯合帝國</title>
         <link rel="icon" type="image/png" href="images/national_emblem.png">
     </head>
     <body>
@@ -22,21 +23,21 @@
             <div class="header">
                     <div class="flex_container">
                         <div class="flagsticker flex_column1">
-                            <img src="images/flag.png" style="width: 25%; height: auto;">
+                            <img src="images/flag.png" style="width: 40%; height: auto;">
                         </div>
                         <div class="flex_container">
                                 <div class="title flex_container flex_column1" id="left"> <!--Left-->
-                                    <a href="https://greatsunempire.github.io/greatsunempire/" class="right link0001" style="margin:20% 0;">
+                                    <a href="index.html" class="right link0001" style="margin:20% 0;">
                                         大陽聯合帝國<br>
                                         Great Sun Empire
                                     </a>
                                 </div>
                                 <div class="title flex_container flex_column1" id="right"> <!--Right-->
-                                    <a href="https://greatsunempire.github.io/greatsunempire/" class="link0001"><img src="images/national_emblem.png" height='140px' width="140px"></a>
+                                    <a href="index.html" class="link0001"><img src="images/national_emblem.png" height='140px' width="140px"></a>
                                 </div>
                         </div>
                         <div class="flagsticker flex_column1">
-                            <img src="images/flag.png" style="width: 25%; height: auto;">
+                            <img src="images/flag.png" style="width: 40%; height: auto;">
                         </div>
                     </div>
                 <div class="menu">
@@ -65,9 +66,9 @@
                             <td class="dropdown">
                                 <button class="dropbtn">官方訊息</button>
                                 <div class="dropdown-content">
-                                    <a href="#">首相府</a>
-                                    <a href="#">外交部</a>
-                                    <a href="#">皇家命令</a>
+                                    <a href="forum.html?category=PMOfficeA">首相府</a>
+                                    <a href="forum.html?category=ForeignMinistryA">外交部</a>
+                                    <a href="forum.html?category=RoyalDecrees">皇家命令</a>
                                 </div>
                             </td>
                             <td class="dropdown">
@@ -79,8 +80,8 @@
                             <td class="dropdown">
                                 <button class="dropbtn">法律</button>
                                 <div class="dropdown-content">
-                                    <a href="#">憲政</a>
-                                    <a href="#">現行法令</a>
+                                    <a href="forum.html?category=Const-Laws">憲政</a>
+                                    <a href="forum.html?category=Current-Laws">現行法令</a>
                                     <a href="#"></a>
                                 </div>
                             </td>
@@ -91,8 +92,21 @@
             </div>
             
         </section>
-        <div id="posts">Loading...</div>
+        <section class="londonbg" style="height: 500px;">
+            <div>
 
+            </div>
+            <div class="flex_container" style="margin-top: 20px;">
+                <div class="flex_column1 rounded-container" style="margin-right: 0px;">
+                    <h1 id="forum-title"></h1>
+                    <br>
+                    本分支總帖數 / Total Posts in this branch：<span id="total"></span>
+                    <br>
+                    頁數 / Page：<span id='current_page'></span>/<span id="totalPages"></span>
+                </div>
+                <div class="flex_column2" id="posts">Loading...</div>
+            </div>
+        </section>
         <!-- JSScript-->
         <script src="javascript/forum.js"></script>
     </body>

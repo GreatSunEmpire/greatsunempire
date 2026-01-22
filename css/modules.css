@@ -57,3 +57,53 @@ td,th,tr {
 .dropdown:hover .dropbtn {
   text-decoration: underline;
 }
+
+/* Popular List */
+.pop-list h1 {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+    color: #1d70b8;
+}
+.pop-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 24px 32px; /* row and column gap */
+    align-items: center;
+}
+.pop-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.pop-list a {
+    font-size: 1.1em;
+    color: #1d70b8;
+    text-decoration: underline;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.pop-list a:hover {
+    text-decoration: underline;
+}
+
+.pop-list li::before {
+    content: "→";
+    display: inline-block;
+    background: #eee;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 8px;
+    font-size: 1.2em;
+    color: #222;
+}
+
+/* For mobiles */
+
+@media (max-width: 767px) {
+  .displayN {
+    display: none;
+  }
+}

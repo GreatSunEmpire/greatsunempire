@@ -2,6 +2,7 @@ let currentPage = 1;
 const postsPerPage = 10; //每頁帖文數設定
 let totalPosts = [];
 let totalPages = 0;
+let category = '';
 
 // URL參數獲取
 function getUrlParam(paramName) {
@@ -19,6 +20,15 @@ const categoryToJsonMap = {
     "default": "../forum_sample.json" // 默认文件
 };
 
+const categoryToName = {
+    "PMOfficeA": "官方訊息---首相府",
+    "ForeignMinistryA": "官方訊息---外交部",
+    "RoyalDecrees": "官方訊息---皇家命令",
+    "Const-Laws": "法律---憲政",
+    "Current-Laws": "法律---現行法令",
+    "default": "一般討論區"
+};
+
 // 加載指定json文件的數據
 async function loadAllPosts(jsonFile) {
     try {
@@ -26,7 +36,14 @@ async function loadAllPosts(jsonFile) {
         const res = await fetch(jsonFile);
         if (!res.ok) throw new Error(`Loading Error: ${res.statusText}`);
         totalPosts = await res.json();
+
+        document.getElementById('forum-title').textContent = categoryToName[getUrlParam('category')] || categoryToName['default'];
+        document.getElementById('total').textContent = totalPosts.length;
+
         totalPages = Math.ceil(totalPosts.length / postsPerPage);
+
+        document.getElementById('totalPages').textContent = totalPages;
+
         renderPosts(currentPage);
         renderPagination();
     } catch (err) {
@@ -49,64 +66,35 @@ function renderPosts(page) {
     const endIndex = Math.min(startIndex + postsPerPage, totalPosts.length);
     const currentPosts = totalPosts.slice(startIndex, endIndex);
 
-    // 生成表格
-    const table = document.createElement('table');
-    const thead = document.createElement('thead');
-    thead.innerHTML = `
-        <tr>
-            <th>ID</th>
-            <th>標題(繁中)</th>
-            <th>標題(英文)</th>
-            <th>作者(繁中)</th>
-            <th>作者(英文)</th>
-            <th>內容(繁中)</th>
-            <th>內容(英文)</th>
-            <th>發佈時間</th>
-        </tr>
-    `;
-    table.appendChild(thead);
-
-    const tbody = document.createElement('tbody');
+    // 為每個帖子創建一個單獨的容器
     for (const post of currentPosts) {
-        const tr = document.createElement('tr');
-        // 依次创建列（与表头对应）
-        const idTd = document.createElement('td'); 
-        idTd.textContent = post.id ?? '';
-        const titleTd = document.createElement('td'); 
-        titleTd.textContent = post.title ?? '';
-        const title_engTd = document.createElement('td');
-        title_engTd.textContent = post.title_eng ?? '';
-        const authorTd = document.createElement('td'); 
-        authorTd.textContent = post.author ?? '';
-        const author_engTd = document.createElement('td');
-        author_engTd.textContent = post.author_eng ?? '';
-        const contextTd = document.createElement('td'); 
-        contextTd.textContent = post.context ?? ''; 
-        const context_engTd = document.createElement('td');
-        context_engTd.textContent = post.context_eng ?? '';
-        const attachmentTd = document.createElement('td'); 
-        attachmentTd.textContent = post.attachment ?? '';
-        const timeTd = document.createElement('td'); 
-        timeTd.textContent = post.time ?? '';
+        // Create a link that wraps the post container
+        const postLink = document.createElement('a');
+        postLink.href = `post.html?category=${encodeURIComponent(category)}&id=${encodeURIComponent(post.id)}`;
+        postLink.className = 'post-container';
+        postLink.style.textDecoration = 'none'; // Optional: remove underline
 
-        // 追加所有列到行
-        tr.appendChild(idTd);
-        tr.appendChild(titleTd);
-        tr.appendChild(title_engTd);
-        tr.appendChild(authorTd);
-        tr.appendChild(author_engTd);
-        tr.appendChild(contextTd);
-        tr.appendChild(context_engTd);
-        tr.appendChild(timeTd);
-        tbody.appendChild(tr);
+        // 帖子標題
+        const title = document.createElement('h2');
+        title.className = 'post-title';
+        title.textContent = post.title ?? '(No Title)';
+        postLink.appendChild(title);
+
+        // 作者和時間
+        const meta = document.createElement('div');
+        meta.className = 'post-meta';
+        meta.textContent = `作者 / Author: ${post.author ?? ''} | 時間 / Time: ${post.time ?? ''} | ID: ${post.id ?? ''}`;
+        postLink.appendChild(meta);
+
+        container.appendChild(postLink);
     }
-    table.appendChild(tbody);
-    container.appendChild(table);
 
     // 分頁容器
     const paginationContainer = document.createElement('div');
     paginationContainer.id = 'pagination';
     container.appendChild(paginationContainer);
+
+    document.getElementById('current_page').textContent = currentPage;
 }
 
 function renderPagination() {
@@ -117,6 +105,7 @@ function renderPagination() {
     const prevBtn = document.createElement('button');
     prevBtn.textContent = '上一頁';
     prevBtn.disabled = currentPage === 1;
+    prevBtn.className = 'pagination-btn';
     prevBtn.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
@@ -126,14 +115,11 @@ function renderPagination() {
     });
     paginationContainer.appendChild(prevBtn);
 
-    // 𧟴碼按钮
+    // 頁碼按钮
     for (let i = 1; i <= totalPages; i++) {
         const pageBtn = document.createElement('button');
         pageBtn.textContent = i;
-        if (i === currentPage) {
-            pageBtn.style.backgroundColor = '#007bff';
-            pageBtn.style.color = 'white';
-        }
+        pageBtn.className = 'pagination-btn' + (i === currentPage ? ' active' : '');
         pageBtn.addEventListener('click', () => {
             currentPage = i;
             renderPosts(currentPage);
@@ -146,6 +132,7 @@ function renderPagination() {
     const nextBtn = document.createElement('button');
     nextBtn.textContent = '下一頁';
     nextBtn.disabled = currentPage === totalPages;
+    nextBtn.className = 'pagination-btn';
     nextBtn.addEventListener('click', () => {
         if (currentPage < totalPages) {
             currentPage++;
@@ -154,17 +141,6 @@ function renderPagination() {
         }
     });
     paginationContainer.appendChild(nextBtn);
-
-    // 樣式style
-    const allButtons = paginationContainer.querySelectorAll('button');
-    allButtons.forEach(btn => {
-        btn.style.margin = '0 4px';
-        btn.style.padding = '4px 12px';
-        btn.style.border = '1px solid #ccc';
-        btn.style.borderRadius = '4px';
-        btn.style.cursor = 'pointer';
-        btn.style.backgroundColor = 'white';
-    });
 }
 
 // 初始化

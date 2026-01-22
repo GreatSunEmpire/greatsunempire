@@ -1,0 +1,46 @@
+
+/* Pagination button base style */
+.pagination-btn {
+    margin: 0 4px;
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.pagination-btn.active {
+    background-color: #007bff;
+    color: rgba(255, 255, 255, 0.578);
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*post*/
+.post-container {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 16px;
+    margin-left: 0px;
+    background: #fff;
+    color: inherit;
+    transition: box-shadow 0.2s;
+    texti-size: 1em;
+}
+.post-container:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #f9f9f9;
+    text-decoration: none;
+}
+
+.post-title {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1d70b8;
+}
