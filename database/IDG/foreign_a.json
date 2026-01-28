@@ -1,24 +1,35 @@
 [
     {
+        "id":"3",
+        "title":"大陽聯合帝國對索洛夫當局制裁的正式回應 Official Response of the Great Sun Empire on the Sanctions Imposed by the Solov Authorities",
+        "author":"大陽君皇",
+        "author_img":"database/avatars/emperor.png",
+        "context":"面對索洛夫當局的制裁，我君皇原先本應以公文或發表演說回應，不過後續經過幾番思考，我國決議不再做出過多的回應，畢竟以真理與事實致勝才應當是「帝國的風範」，也再度感謝所有支撐我們走到現在的夥伴們，沒有你們沒有現在的我❤️。\n其次索洛夫當局制裁方面，我們只表示：\n我們大陽聯合帝國永不熄滅，不會畏懼壓力，我們只作社會需要的事情，堅守和平理性與道德秩序是我們的底線。\nUpon the sanctions imposed by the Solov administration, His Majesty the Emperor would have responded with official statements. However, after consideration, the Empire has decided not to make unnecessary responses, as triumphing with the truth is the demeanor of the Empire. Once again, we thank all sectors who have supported us until this very moment; without you, we would not become what we are today.\nRegarding the sanctions from the Solov administration, this is our sole response:\nThe Great Sun Empire will never be suppressed by external forces, nor will we feel fear and pressure. We only do what society desires; Attempting to disrupt peace, rationality, and moral order is our red line.",
+        "attachment":"database/attachments/foreigna_0003.jpg",
+        "seal":"images/official_seal.png",
+        "seal_name":"大陽聯合帝國",
+        "time":"2026-01-24 13:25"
+    },
+    {
         "id":"2",
-        "title":"本帝國與索洛夫社會主義聯邦共和國斷交聲明 Statement of the severing of diplomatic relations with the Solov Socialist Federal Republic",
-        "author":"大陽君皇 Emperor of the GSE",
+        "title":"本帝國與索洛夫社會主義聯邦共和國斷交聲明 Statement of The Severing of Diplomatic Relations with the Solov Socialist Federal Republic",
+        "author":"大陽君皇",
         "author_img":"database/avatars/emperor.png",
         "context":"我代表大陽聯合帝國正式宣布與索洛夫社會主義聯邦共和國斷交，或者像他說的索洛夫政權斷交，基於我國寄出的問題，索洛夫政權當局所謂領導人李錦程不但牽扯國家稱為，並且拒絕為自己的作為進行負責，並將所有罪責強加於國際總會秘書長'琉璃'小姐與'MikeTong'先生，而針對不當言論和做法，我們帝國將抱持無容忍的堅硬態度，發佈斷交並呼籲各國應當審視索洛夫政權當局是否是一個理性願意負責任的政權。\n On behalf of the Great Sun Empire, I hereby announce the severing of diplomatic relations with the Solov Socialist Federal Republic, or known as the Solov regime. Based on the issues raised by our country, the so-called leader of the Solov regime, Li Jincheng, is not only involved in state-naming controversies but also refuses to take responsibility for his actions, shifting all blame onto the International General Assembly Secretary-General Miss 'Liuli' and Mr. 'Mike Tong'. In response to these insufferable and obnoxious remarks and actions, our empire proclaims a zero-tolerance stance, announcing the severance of diplomatic ties with the SFRS and urging all countries to reassess whether the Solov regime is a rational and responsible government.",
         "attachment":"",
         "seal":"images/official_seal.png",
-        "seal_name":"大陽聯合帝國 \n Great Sun Empire",
+        "seal_name":"大陽聯合帝國",
         "time":"2026-01-23 19:21"
     },
     {
         "id":"1",
         "title":"對索洛夫社會主義聯邦共和國不當行為之抗議聲明 Statement of Protest Against the Misconduct of the Solov Socialist Federal Republic",
-        "author":"大陽君皇 Emperor of the GSE",
+        "author":"大陽君皇",
         "author_img":"database/avatars/emperor.png",
         "context":"近日於西元2026年1月21日索洛夫社會主義聯邦共和國當局宣稱MikeTong先生逝世的消息，而事後多方包含索洛夫國親自證實此消息是虛假的，而此事件也引發部份國家的不滿，因此我國友邦桃花民主共和國選擇進行斷交。但事後索洛夫卻以「非社會主義國家」詞彙與禁止入境等措施回應，我代表大陽聯合帝國表示強烈的譴責並要求索國應給予桃花國與國際社會一個回應，因為事後雖然索洛夫發表自檢聲明等，但包含造成意識型態對立說詞與先前制裁行動並沒有得到合理解決。我們也再次督促索洛夫貴國應銘記(平戶中平事件)的爭議，事關人命無論玩笑對戲，不得由微國家政府力量傳遞造成恐慌和錯誤訊息，我們也因此事情重新審視大陽與索洛夫外交關係。\n On January 21, 2026, the authorities of the Socialist Federal Republic of Solov announced the death of Mr. Mike Tong. However, multiple sources, including the SFRS himself, clarified this as an ingenuine message. This incident sparked discontent among some countries, resulting in our ally, the Democratic Republic of Peach Blossom, to sever diplomatic ties with the SFRS. However, the SFRS responded by using the term 'non-socialist country' and imposing entry bans. On behalf of the Great Sun Empire, we strongly condemn this action and demand a response from the SFRS to the DRPB and the international community. Although SFRS issued a self-criticism statement, the rhetoric that created ideological conflict and the previous sanctions have not been adequately addressed. We also urge THE SFRS to remember the controversy surrounding the (Hirado Nakahei incident). When it comes to human life, no jokes or tricks are acceptable; such small government should not spread panic and misinformation. We are also re-evaluating the diplomatic relations between the GSE and SFRS in response to this incident.",
         "attachment":"database/attachments/foreigna_0001.jpg",
         "seal":"images/official_seal.png",
-        "seal_name":"大陽聯合帝國 \n Great Sun Empire",
+        "seal_name":"大陽聯合帝國",
         "time":"2026-01-23 13:34"
     }
 ]
