@@ -12,12 +12,12 @@ function getUrlParam(paramName) {
 
 // 目錄與json資料庫對應表
 const categoryToJsonMap = {
-    "PMOfficeA": "../database/IDG/pm_office_a.json", // 首相府
-    "ForeignMinistryA": "../database/IDG/foreign_a.json", // 外交部
-    "RoyalDecrees": "../database/IDG/royal_decree.json", // 皇家命令
-    "Const-Laws": "../database/laws/constitution_laws.json", // 憲政
-    "Current-Laws": "../database/laws/current_laws.json", // 現行法令
-    "default": "../forum_sample.json" // 默认文件
+    "PMOfficeA": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/pm_office_a.json", // 首相府
+    "ForeignMinistryA": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/foreign_a.json", // 外交部
+    "RoyalDecrees": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/royal_decree.json", // 皇家命令
+    "Const-Laws": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/constitution_laws.json", // 憲政
+    "Current-Laws": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/current_laws.json", // 現行法令
+    "default": "forum_sample.json" // 默认文件
 };
 
 const categoryToName = {
@@ -32,6 +32,7 @@ const categoryToName = {
 // 加載指定json文件的數據
 async function loadAllPosts(jsonFile) {
     try {
+        console.log('Loading posts from:', jsonFile);
         // 發起請求獲取數據
         const res = await fetch(jsonFile);
         if (!res.ok) throw new Error(`Loading Error: ${res.statusText}`);
@@ -47,7 +48,8 @@ async function loadAllPosts(jsonFile) {
         renderPosts(currentPage);
         renderPagination();
     } catch (err) {
-        document.getElementById('posts').textContent = 'Loading Error: ' + err.message;
+        console.error('Failed to load posts from', jsonFile, err);
+        document.getElementById('posts').textContent = 'Loading Error (' + jsonFile + '): ' + err.message;
     }
 }
 
@@ -149,6 +151,15 @@ function renderPagination() {
     category = getUrlParam('category') || 'default';
     // 映射到json文件
     const targetJsonFile = categoryToJsonMap[category] || categoryToJsonMap['default'];
+
+    // If the page is opened via file://, fetching external resources will often fail due to CORS.
+    if (window.location.protocol === 'file:') {
+        const postsEl = document.getElementById('posts');
+        const msg = 'Detected file:// origin — please serve the project over HTTP.\nRun from project root: "python -m http.server 8000" and open http://localhost:8000/forum.html';
+        console.warn(msg);
+        if (postsEl) postsEl.textContent = msg;
+        return;
+    }
     // 加載數據
     loadAllPosts(targetJsonFile);
 })();
