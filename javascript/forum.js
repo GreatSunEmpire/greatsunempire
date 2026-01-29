@@ -12,11 +12,11 @@ function getUrlParam(paramName) {
 
 // 目錄與json資料庫對應表
 const categoryToJsonMap = {
-    "PMOfficeA": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/pm_office_a.json", // 首相府
-    "ForeignMinistryA": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/foreign_a.json", // 外交部
-    "RoyalDecrees": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/royal_decree.json", // 皇家命令
-    "Const-Laws": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/constitution_laws.json", // 憲政
-    "Current-Laws": "https://github.com/GreatSunEmpire/greatsunempire/blob/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/current_laws.json", // 現行法令
+    "PMOfficeA": "https://raw.githubusercontent.com/GreatSunEmpire/greatsunempire/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/pm_office_a.json", // 首相府
+    "ForeignMinistryA": "https://raw.githubusercontent.com/GreatSunEmpire/greatsunempire/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/foreign_a.json", // 外交部
+    "RoyalDecrees": "https://raw.githubusercontent.com/GreatSunEmpire/greatsunempire/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/IDG/royal_decree.json", // 皇家命令
+    "Const-Laws": "https://raw.githubusercontent.com/GreatSunEmpire/greatsunempire/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/constitution_laws.json", // 憲政
+    "Current-Laws": "https://raw.githubusercontent.com/GreatSunEmpire/greatsunempire/7bb2e69b2f1e58561e170eeb54f59a474cf77e1f/database/laws/current_laws.json", // 現行法令
     "default": "forum_sample.json" // 默认文件
 };
 
