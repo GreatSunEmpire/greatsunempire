@@ -1,0 +1,24 @@
+[
+    {
+        "id":"1",
+        "title":"與納斯共和國之合併公告 Announcement of the Merger with the Nas Socialist Republic",
+        "author":"大陽君皇",
+        "author_img":"database/avatars/emperor.png",
+        "context":"德納斯社會主義共和國領導人—玻璃大砲近日與大陽君皇—林省談論關於德納斯國暫時性長時間合併自大陽聯合帝國，幫助玻璃大砲先生於微國圈離開期間德納斯國的發展與日常運作。\n而昨日2026 1/25星期日我們雙方迅速愉快的達成共識，簽署「朝德斯協議」保障雙方權益並確定未來穩定互惠的道路，此條約將於2026 1/30星期五生效。\nThe Leader of the Denas Socialist Republic, Buoli Dapao, has recently discussed with the Emperor of the Great Sun Empire, Lin Sheng, regarding the temporary intergration of the State of Denas into the GSE to assist Mr. Buoli Dapao in the development and administration of the State of Denas during his absence from the micro-nation sphere.\nA consensus is harmoniously reached yesterday, at 25th of January, between the two parties, as the 'Sun-Denas Agreement' to safeguard the rights and interests of both parties and determine a stable and mutually beneficial path for the future. This treaty will take effect on the 30th of January, 2026.",
+        "attachment":"database/attachments/pmoa_0001.png",
+        "seal":"images/official_seal.png",
+        "seal_name":"大陽聯合帝國",
+        "time":"2026-01-26 14:00"
+    },
+    {
+        "id":"0",
+        "title":"開發者試行 Developer Trial",
+        "author":"檸檬鴨 Lemon Q.",
+        "author_img":"../database/avatars/lemonq.jpg",
+        "context":"Hello World \n This is a developer trial post. The First World War was ignited from the assassination of the Archduke Franz Ferdinand of Austria, starting the invasion of the Balkans by the Austro-Hungarian Empire, followed by the participation of the Allies (Germany) and the Ententes, including Britain, France, Russia, etc. Numerous countries",
+        "attachment":"../database/attachments/pdf-sample_0.pdf",
+        "seal":"../images/official_seal.png",
+        "seal_name":"大陽聯合帝國\nThe Great Sun Empire",
+        "time":"2026-01-22 15:41:02"
+    }
+]
