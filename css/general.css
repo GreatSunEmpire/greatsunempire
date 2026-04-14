@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Iansui');
 
 body {
-    background-color:#FFF8E7;
+    background-color:rgb(255, 248, 231);
 
     font-family: 'Iansui',Times;
     font-size: medium;
@@ -116,10 +116,15 @@ hr {
     background-repeat: no-repeat;
 }
 .mapbg {
-    background: white;
     background-image: url('../images/worldmap.jpg');
-    background-size: auto 100%;
-    background-position: top;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parliamentbg {
+    background-image: url('../images/parliament.png');
+    background-size: 100% auto;
+    background-position: center;
     background-repeat: no-repeat;
 }
 

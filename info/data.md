@@ -8,7 +8,7 @@
 
 `image0001` = map
 
-background-color = `#FFF8E7`
+background-color = `#FFF8E7`, `255, 248, 231`
 
 永久性連結：[text](https://discord.gg/CTRNwn4aWF)
 
